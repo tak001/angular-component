@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { OutputComponent } from './output.component';
+import { EditComponent } from './edit/edit.component';
+import { FormsModule } from '@angular/forms';
 
 describe('OutputComponent', () => {
   let component: OutputComponent;
@@ -11,9 +13,10 @@ describe('OutputComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OutputComponent ]
+      declarations: [OutputComponent, EditComponent],
+      imports: [FormsModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
