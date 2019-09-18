@@ -1,0 +1,7 @@
+<div class="mt">
+  <span *ngFor="let book of books">
+    [<a (click)="onClick(book)">{{book.title}}</a>]
+  </span>
+</div>
+<hr>
+<app-details [item]="selected"></app-details>
