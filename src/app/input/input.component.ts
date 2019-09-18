@@ -10,12 +10,6 @@ import { Book } from '../book';
 })
 export class InputComponent implements OnInit {
   selected: Book;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
   books: Book[] = [
     {
       isbn: '978-4-7741-8411-1',
@@ -29,7 +23,12 @@ export class InputComponent implements OnInit {
       price: 3200,
       publisher: 'foo',
     },
-  ]
+  ];
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
   onClick(book: Book) {
     this.selected = book;

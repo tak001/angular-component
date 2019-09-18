@@ -21,7 +21,7 @@ export class OutputComponent implements OnInit {
       price: 3200,
       publisher: 'foo',
     },
-  ]
+  ];
 
   constructor() { }
 
@@ -34,11 +34,11 @@ export class OutputComponent implements OnInit {
       title: book.title,
       price: book.price,
       publisher: book.publisher,
-    }
+    };
   }
 
   onEdited(book: Book) {
-    for (let item of this.books) {
+    for (const item of this.books) {
       if (item.isbn === book.isbn) {
         item.title = book.title;
         item.price = book.price;
