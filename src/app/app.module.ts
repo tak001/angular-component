@@ -9,6 +9,8 @@ import { InputComponent } from './input/input.component';
 import { DetailsComponent } from './input/details/details.component';
 import { OutputComponent } from './output/output.component';
 import { EditComponent } from './output/edit/edit.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { ChildComponent } from './life-cycle/child/child.component';
 
 @NgModule({
    declarations: [
@@ -17,7 +19,9 @@ import { EditComponent } from './output/edit/edit.component';
       InputComponent,
       DetailsComponent,
       OutputComponent,
-      EditComponent
+      EditComponent,
+      LifeCycleComponent,
+      ChildComponent
    ],
    imports: [
       BrowserModule,
