@@ -25,10 +25,12 @@ export class LifeCycleComponent implements OnChanges,
   }
 
   // ライフサイクルメソッド（それぞれのタイミングでログを表示）
+  // ページの初期化
   ngOnInit() {
     console.log('ngOnInit');
   }
 
+  // 入力プロパティの変更を検知する
   ngOnChanges() {
     console.log('ngOnChanges');
   }
@@ -37,22 +39,27 @@ export class LifeCycleComponent implements OnChanges,
     console.log('ngDoCheck');
   }
 
+  // 外部コンテンツの初期化
   ngAfterContentInit() {
     console.log('ngAfterContentInit');
   }
 
+  // 外部コンテンツの変更時の処理
   ngAfterContentChecked() {
     console.log('ngAfterContentChecked');
   }
 
+  // ビューの初期化
   ngAfterViewInit() {
     console.log('ngAfterViewInit');
   }
 
+  // ビュー変更時の処理を実装する
   ngAfterViewChecked() {
     console.log('ngAfterViewChecked');
   }
 
+  // ページの終了処理
   ngOnDestroy() {
     console.log('ngOnDestroy');
   }
