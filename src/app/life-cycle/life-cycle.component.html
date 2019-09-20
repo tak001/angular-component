@@ -1,7 +1,5 @@
 <div class="mt">
-  <label
-    >表示/非表示<input type="checkbox" (change)="onChange()" checked
-  /></label>
+  <label>表示/非表示<input type="checkbox" (change)="onChange()" checked /></label>
 </div>
 <!-- showプロパティがtrueの時だけ、子コンポーネントを表示 -->
 <app-child [time]="current" *ngIf="show"></app-child>

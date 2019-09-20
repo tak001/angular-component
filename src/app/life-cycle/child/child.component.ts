@@ -1,6 +1,6 @@
 import {
   Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked,
-  AfterViewInit, AfterViewChecked, OnDestroy, Input
+  AfterViewInit, AfterViewChecked, OnDestroy, Input, SimpleChanges
 } from '@angular/core';
 
 @Component({
@@ -22,8 +22,12 @@ export class ChildComponent implements OnChanges,
     console.log('[child]ngOnInit');
   }
 
-  ngOnChanges() {
+  ngOnChanges(changes: SimpleChanges) {
     console.log('[child]ngOnChanges');
+    for (let prop in changes) {
+      let change = changes[prop];
+      console.log(`${prop}:${change.previousValue} => ${change.currentValue}`);
+    }
   }
 
   ngDoCheck() {
