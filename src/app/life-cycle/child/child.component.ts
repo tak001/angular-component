@@ -24,8 +24,8 @@ export class ChildComponent implements OnChanges,
 
   ngOnChanges(changes: SimpleChanges) {
     console.log('[child]ngOnChanges');
-    for (let prop in changes) {
-      let change = changes[prop];
+    for (const prop in changes) {
+      const change = changes[prop];
       console.log(`${prop}:${change.previousValue} => ${change.currentValue}`);
     }
   }

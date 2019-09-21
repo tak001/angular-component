@@ -11,6 +11,8 @@ import { OutputComponent } from './output/output.component';
 import { EditComponent } from './output/edit/edit.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { ChildComponent } from './life-cycle/child/child.component';
+import { AfterViewComponent } from './life-cycle/after-view/after-view.component';
+import { AfterChildComponent } from './life-cycle/after-view/after-child/after-child.component';
 
 @NgModule({
    declarations: [
@@ -21,7 +23,9 @@ import { ChildComponent } from './life-cycle/child/child.component';
       OutputComponent,
       EditComponent,
       LifeCycleComponent,
-      ChildComponent
+      ChildComponent,
+      AfterViewComponent,
+      AfterChildComponent
    ],
    imports: [
       BrowserModule,
