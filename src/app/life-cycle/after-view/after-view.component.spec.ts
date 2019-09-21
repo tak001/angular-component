@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { AfterViewComponent } from './after-view.component';
+import { AfterChildComponent } from './after-child/after-child.component';
+import { FormsModule } from '@angular/forms';
 
 describe('AfterViewComponent', () => {
   let component: AfterViewComponent;
@@ -11,9 +13,10 @@ describe('AfterViewComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AfterViewComponent ]
+      declarations: [AfterViewComponent, AfterChildComponent],
+      imports: [FormsModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

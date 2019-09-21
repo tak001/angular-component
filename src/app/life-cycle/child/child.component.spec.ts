@@ -11,14 +11,15 @@ describe('ChildComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChildComponent ]
+      declarations: [ChildComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ChildComponent);
     component = fixture.componentInstance;
+    component.time = new Date();
     fixture.detectChanges();
   });
 

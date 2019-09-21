@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { AfterChildComponent } from './after-child.component';
+import { FormsModule } from '@angular/forms';
 
 describe('AfterChildComponent', () => {
   let component: AfterChildComponent;
@@ -11,14 +12,16 @@ describe('AfterChildComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AfterChildComponent ]
+      declarations: [AfterChildComponent],
+      imports: [FormsModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AfterChildComponent);
     component = fixture.componentInstance;
+    component.index = 1;
     fixture.detectChanges();
   });
 
