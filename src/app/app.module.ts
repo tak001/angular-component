@@ -13,6 +13,8 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { ChildComponent } from './life-cycle/child/child.component';
 import { AfterViewComponent } from './life-cycle/after-view/after-view.component';
 import { AfterChildComponent } from './life-cycle/after-view/after-child/after-child.component';
+import { NgcontentComponent } from './ngcontent/ngcontent.component';
+import { ContentChildComponent } from './ngcontent/content-child/content-child.component';
 
 @NgModule({
    declarations: [
@@ -25,7 +27,9 @@ import { AfterChildComponent } from './life-cycle/after-view/after-child/after-c
       LifeCycleComponent,
       ChildComponent,
       AfterViewComponent,
-      AfterChildComponent
+      AfterChildComponent,
+      NgcontentComponent,
+      ContentChildComponent
    ],
    imports: [
       BrowserModule,

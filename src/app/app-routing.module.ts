@@ -4,11 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { InputComponent } from './input/input.component';
 import { OutputComponent } from './output/output.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { NgcontentComponent } from './ngcontent/ngcontent.component';
 
 const routes: Routes = [
   { path: 'input', component: InputComponent },
   { path: 'output', component: OutputComponent },
-  { path: 'cycle', component: LifeCycleComponent }
+  { path: 'cycle', component: LifeCycleComponent },
+  { path: 'content', component: NgcontentComponent }
 ];
 
 @NgModule({
