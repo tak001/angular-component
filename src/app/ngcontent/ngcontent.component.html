@@ -1,2 +1,9 @@
-<app-content-child>tanaka</app-content-child>
 <!-- ngContentはルートコンポーネントでは利用できない -->
+<!-- 呼び出しは順不同 -->
+<app-content-child>
+  <span class="header">あなたも参加しませんか？</span>
+  <span class="attention">ただいま、メンバー募集中！</span>
+  <small>連絡先：hogehoge@gmail.com</small>
+  <p>興味のある方は、プロジェクト担当まで、メールでご連絡下さい。</p>
+  <small>（担当：tanaka）</small>
+</app-content-child>
