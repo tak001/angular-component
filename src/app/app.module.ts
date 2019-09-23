@@ -15,6 +15,9 @@ import { AfterViewComponent } from './life-cycle/after-view/after-view.component
 import { AfterChildComponent } from './life-cycle/after-view/after-child/after-child.component';
 import { NgcontentComponent } from './ngcontent/ngcontent.component';
 import { ContentChildComponent } from './ngcontent/content-child/content-child.component';
+import { NgaftercontentComponent } from './ngaftercontent/ngaftercontent.component';
+import { ParentComponent } from './ngaftercontent/parent/parent.component';
+import { AfterContentChildComponent } from './ngaftercontent/after-content-child/after-content-child.component';
 
 @NgModule({
    declarations: [
@@ -29,7 +32,10 @@ import { ContentChildComponent } from './ngcontent/content-child/content-child.c
       AfterViewComponent,
       AfterChildComponent,
       NgcontentComponent,
-      ContentChildComponent
+      ContentChildComponent,
+      NgaftercontentComponent,
+      ParentComponent,
+      AfterContentChildComponent
    ],
    imports: [
       BrowserModule,

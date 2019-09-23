@@ -5,12 +5,14 @@ import { InputComponent } from './input/input.component';
 import { OutputComponent } from './output/output.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { NgcontentComponent } from './ngcontent/ngcontent.component';
+import { NgaftercontentComponent } from './ngaftercontent/ngaftercontent.component';
 
 const routes: Routes = [
   { path: 'input', component: InputComponent },
   { path: 'output', component: OutputComponent },
   { path: 'cycle', component: LifeCycleComponent },
-  { path: 'content', component: NgcontentComponent }
+  { path: 'content', component: NgcontentComponent },
+  { path: 'after-content', component: NgaftercontentComponent },
 ];
 
 @NgModule({
