@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { NgaftercontentComponent } from './ngaftercontent.component';
+import { ParentComponent } from './parent/parent.component';
+import { AfterContentChildComponent } from './after-content-child/after-content-child.component';
 
 describe('NgaftercontentComponent', () => {
   let component: NgaftercontentComponent;
@@ -11,9 +13,9 @@ describe('NgaftercontentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgaftercontentComponent ]
+      declarations: [NgaftercontentComponent, ParentComponent, AfterContentChildComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

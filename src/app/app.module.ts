@@ -35,7 +35,7 @@ import { AfterContentChildComponent } from './ngaftercontent/after-content-child
       ContentChildComponent,
       NgaftercontentComponent,
       ParentComponent,
-      AfterContentChildComponent
+      AfterContentChildComponent,
    ],
    imports: [
       BrowserModule,

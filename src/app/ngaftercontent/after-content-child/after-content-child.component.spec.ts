@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { AfterContentChildComponent } from './after-content-child.component';
+import { FormsModule } from '@angular/forms';
 
 describe('AfterContentChildComponent', () => {
   let component: AfterContentChildComponent;
@@ -11,9 +12,10 @@ describe('AfterContentChildComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AfterContentChildComponent ]
+      declarations: [AfterContentChildComponent],
+      imports: [FormsModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

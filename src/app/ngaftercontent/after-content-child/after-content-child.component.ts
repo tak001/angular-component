@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./after-content-child.component.css']
 })
 export class AfterContentChildComponent implements OnInit {
+  poem: string;
 
   constructor() { }
 
